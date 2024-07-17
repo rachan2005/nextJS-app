@@ -2,7 +2,6 @@
 import products from '../products.js';
 import React from 'react';
 
-
 const page = ({ params }) => {
   const { id } = params;
   const product = products.find((product) => product.id === parseInt(id, 10));

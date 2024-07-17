@@ -13,16 +13,16 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <div className="mx-auto flex w-screen flex-col items-center font-sans">
-      <header className="w-11/12 mx-10 my-5 p-4 bg-gray-800 bg-opacity-80 backdrop-blur-lg flex justify-between items-center rounded-full ">
-      <div className="flex items-center space-x-4 pl-4"><svg className="size-5 stroke-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-anchor"><circle cx="12" cy="5" r="3"></circle><line x1="12" y1="22" x2="12" y2="8"></line><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path></svg></div>
+      <header className="w-11/12 mx-10 my-5 p-4 bg-gray-800 bg-opacity-80 backdrop-blur-lg flex justify-between items-center rounded-full transistion duration-150 hover:bg-purple-900">
+      <div className="flex hover:translate-x-6 hover:rotate-180 hover:scale-110 items-center space-x-4 pl-4"><svg className="size-5 stroke-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-anchor"><circle cx="12" cy="5" r="3"></circle><line x1="12" y1="22" x2="12" y2="8"></line><path d="M5 12H2a10 10 0 0 0 20 0h-3"></path></svg></div>
       <nav className="flex px-1 truncate">
-      <a className="text-sm font-bold my-1 ml-6" href="/">
+      <a id="main" className="text-sm font-bold my-1 ml-6" href="/">
       Profile</a>
-      <a className="text-sm font-bold my-1 ml-6" href="/post/">
+      <a id="post" className="text-sm font-bold my-1 ml-6" href="/post/">
       Product</a>
-      <a className="text-sm font-bold my-1 ml-6" href="/cart/">
+      <a id="cart" className="text-sm font-bold my-1 ml-6" href="/cart/">
       Cart</a>
-      <a className="text-sm font-bold my-1 ml-6 pr-4" href="/contact/">
+      <a id="contact" className="text-sm font-bold my-1 ml-6 pr-4" href="/contact/">
       Contact</a>
       </nav>
     </header>

@@ -13,11 +13,12 @@ const page = () => {
     setCart(updatedCart);
   };
   return (
+    <>
     <div className="w-11/12 mx-auto p-4">
       <h1 className="text-2xl text-center font-bold mb-8">Products</h1>
       <div className="grid grid-cols-3">
         {products.map((product) => (
-          <div className="border p-4 m-1 rounded shadow-lg shadow-blue-500/50">
+          <div className="border p-4 m-1 rounded shadow-lg shadow-blue-500/50 duration-150 hover:rotate-1">
           <h2 className="text-xl font-bold">{product.name}</h2>
           <p className="mb-2">Price: {product.price} Rs</p>
           <a href={`/post/${product.id}`} className="text-blue-400 hover:underline">
@@ -33,6 +34,7 @@ const page = () => {
         Go to Cart
       </button>
     </div>
+    </>
   );
 };
 

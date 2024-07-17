@@ -15,9 +15,9 @@ const page = () => {
       <h1 className="text-2xl font-bold mb-4">Your Cart</h1>
       <ul className="flex-1">
         {cart.map((product, index) => (
-          <li key={index} className="border my-2 p-4 rounded shadow-md">
+          <li key={index} className="border my-2 p-4 rounded shadow-lg shadow-blue-500 duration-150 hover:scale-x-110 hover:rotate-1">
             <h2 className="text-xl font-semibold">{product.name}</h2>
-            <p>Price: ${product.price}</p>
+            <p>Price: {product.price} Rs</p>
             <button 
               className="bg-red-500 mt-4 text-white px-4 py-2 rounded hover:bg-red-600 ml-2" 
               onClick={() => removeFromCart(product)}>
